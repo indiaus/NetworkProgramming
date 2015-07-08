@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EchoBackServer", "EchoBackServer\EchoBackServer.vcxproj", "{5E5FBAB4-627F-401E-A3E9-199F60D7022D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EchoBackClient", "EchoBackClient\EchoBackClient.vcxproj", "{09978C5A-2786-4463-9BE8-EF32F4DA631D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "Common\Common.vcxproj", "{00488395-7F19-46A8-BB3F-66BF8D1FA7F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E5FBAB4-627F-401E-A3E9-199F60D7022D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5E5FBAB4-627F-401E-A3E9-199F60D7022D}.Debug|Win32.Build.0 = Debug|Win32
+		{5E5FBAB4-627F-401E-A3E9-199F60D7022D}.Release|Win32.ActiveCfg = Release|Win32
+		{5E5FBAB4-627F-401E-A3E9-199F60D7022D}.Release|Win32.Build.0 = Release|Win32
+		{09978C5A-2786-4463-9BE8-EF32F4DA631D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{09978C5A-2786-4463-9BE8-EF32F4DA631D}.Debug|Win32.Build.0 = Debug|Win32
+		{09978C5A-2786-4463-9BE8-EF32F4DA631D}.Release|Win32.ActiveCfg = Release|Win32
+		{09978C5A-2786-4463-9BE8-EF32F4DA631D}.Release|Win32.Build.0 = Release|Win32
+		{00488395-7F19-46A8-BB3F-66BF8D1FA7F1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{00488395-7F19-46A8-BB3F-66BF8D1FA7F1}.Debug|Win32.Build.0 = Debug|Win32
+		{00488395-7F19-46A8-BB3F-66BF8D1FA7F1}.Release|Win32.ActiveCfg = Release|Win32
+		{00488395-7F19-46A8-BB3F-66BF8D1FA7F1}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

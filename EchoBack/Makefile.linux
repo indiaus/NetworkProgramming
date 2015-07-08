@@ -1,0 +1,29 @@
+CC=g++
+CFLAGS=-c -Wall -DLSI_OS_LINUX
+LDFLAGS=
+LIBS=
+
+SERVER_OBJS=EchoBackServer/Linux/linservmain.o EchoBackServer/Common/server.o
+CLIENT_OBJS=EchoBackClient/Linux/linclientmain.o EchoBackClient/Common/client.o
+
+all: echobackserver echobackclient
+
+echobackserver: $(SERVER_OBJS)
+
+echobackclient: $(CLIENT_OBJS)
+
+echobackserver:
+	$(CC) linservmain.o server.o -o $@
+
+echobackclient:
+	$(CC) linclientmain.o client.o -o $@
+
+$(SERVER_OBJS) $(CLIENT_OBJS) : Common/include/globals.h Common/include/exports.h Common/include/bridge.h 
+
+%.o : %.cpp
+	$(CC) $(CFLAGS) $<
+
+clean:
+	rm -f *.o
+	rm -f echobackclient echobackserver
+
