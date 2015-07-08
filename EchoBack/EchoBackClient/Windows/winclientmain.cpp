@@ -1,3 +1,7 @@
+//
+// Copyright (c) 2015 - Atul Mukker <indiaus@gmail.com>
+//
+
 #include <stdio.h>
 
 // Need to link with Ws2_32.lib

@@ -1,6 +1,10 @@
 //
-// Client
+// Copyright (c) 2015 - Atul Mukker <indiaus@gmail.com>
 //
+//
+// Echoback Client
+//
+
 #include "../../Common/include/bridge.h"
 #include "../../Common/include/globals.h"
 

@@ -1,6 +1,10 @@
 //
-// Server
+// Copyright (c) 2015 - Atul Mukker <indiaus@gmail.com>
 //
+//
+// Echoback Server
+//
+
 #include "../../Common/include/bridge.h"
 #include "../../Common/include/globals.h"
 
@@ -13,7 +17,7 @@ int initializeClient(char *serverAddr)
 {
 	struct addrinfo *result = NULL, *ptr = NULL, hints;
 	SOCKET ConnectSocket;
-	char *sendbuf = "this is a test";
+	const char *sendbuf = "this is a test";
 	char recvbuf[DEFAULT_BUFLEN];
 	int iResult;
 	int recvbuflen = DEFAULT_BUFLEN;

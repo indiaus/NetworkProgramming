@@ -1,21 +1,24 @@
+#
+# Copyright (c) 2015 - Atul Mukker <indiaus@gmail.com>
+#
 CC=g++
-CFLAGS=-c -Wall -DLSI_OS_LINUX
+CFLAGS=-c -Wall -DMYAPP_OS_LINUX
 LDFLAGS=
 LIBS=
 
 SERVER_OBJS=EchoBackServer/Linux/linservmain.o EchoBackServer/Common/server.o
 CLIENT_OBJS=EchoBackClient/Linux/linclientmain.o EchoBackClient/Common/client.o
 
-all: echobackserver echobackclient
+all: ebserver ebclient
 
-echobackserver: $(SERVER_OBJS)
+ebserver: $(SERVER_OBJS)
 
-echobackclient: $(CLIENT_OBJS)
+ebclient: $(CLIENT_OBJS)
 
-echobackserver:
+ebserver:
 	$(CC) linservmain.o server.o -o $@
 
-echobackclient:
+ebclient:
 	$(CC) linclientmain.o client.o -o $@
 
 $(SERVER_OBJS) $(CLIENT_OBJS) : Common/include/globals.h Common/include/exports.h Common/include/bridge.h 
@@ -25,5 +28,5 @@ $(SERVER_OBJS) $(CLIENT_OBJS) : Common/include/globals.h Common/include/exports.
 
 clean:
 	rm -f *.o
-	rm -f echobackclient echobackserver
+	rm -f ebclient ebserver
 

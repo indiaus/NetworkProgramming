@@ -1,3 +1,7 @@
+//
+// Copyright (c) 2015 - Atul Mukker <indiaus@gmail.com>
+//
+
 #include <stdio.h>
 
 #include "../../Common/include/exports.h"

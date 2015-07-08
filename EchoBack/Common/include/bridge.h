@@ -3,7 +3,7 @@
 // on windows and other OSes
 //
 
-#if defined(LSI_OS_WINDOWS)
+#if defined(MYAPP_OS_WINDOWS)
 
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
@@ -11,7 +11,7 @@
 #include <ws2tcpip.h>
 #include <stdio.h>
 
-#elif defined(LSI_OS_LINUX)
+#elif defined(MYAPP_OS_LINUX) || defined(MYAPP_OS_MACOSX)
 
 #include <string.h>
 #include <stdio.h>
