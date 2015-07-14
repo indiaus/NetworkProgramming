@@ -1,0 +1,26 @@
+#
+# Copyright (c) 2015 - Atul Mukker <indiaus@gmail.com>
+#
+CC=g++
+CFLAGS=-c -Wall -DMYAPP_OS_MACOSX
+LDFLAGS=
+LIBS=
+
+CLIENT_OBJS=Client/Linux/main.o Client/Common/client.o
+
+all: showipclient showip
+
+showipclient: $(CLIENT_OBJS)
+
+showip:
+	$(CC) main.o client.o -o $@
+
+$(CLIENT_OBJS) : Common/include/globals.h Common/include/exports.h Common/include/bridge.h
+
+%.o : %.cpp
+	$(CC) $(CFLAGS) $<
+
+clean:
+	rm -f *.o
+	rm -f showip
+
